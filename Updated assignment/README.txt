@@ -22,8 +22,8 @@ Changes to review:
 - The last program divides by wd to satisfy its stated initial velocity of 8 m/s. This corrects the reference formula.
 - Q3 uses the standard harmonic-load interpretation of DAF, following the supplied reference. The photo links it to the earthquake case but does not define its normalization. Confirm whether the instructor instead wants peak earthquake displacement divided by the static displacement under peak effective earthquake force. This interpretation remains unresolved.
 
-Data assumption:
-The supplied Elcentro.mat contains p and t, but no unit/station/component metadata. The conversion p*0.01 is retained from the reference, assuming cm/s^2. The provenance and units need confirming against the original record before final submission. No new PEER download is claimed.
+Data check, updated 19 November 2026:
+All 1559 source samples match the documented El Centro 1940 North-South (Peknold version) record in NHERI SimCenter: p = 981 times source acceleration in g, maximum error 5.68e-14. The supplied file adds an initial zero and two trailing zeros. Therefore p is in cm/s^2 and p*0.01 is correct. A second comparison against Vibrationdata confirms the acceleration sequence. NPTEL confirms the supplied t=0 zero/first-value-at-.02 s timing convention. Direct PEER-download history is not established; no new PEER download is claimed. See Elcentro_input_check.txt for exact sources and details. The older units-unconfirmed warning is superseded. Q3 definition still needs confirmation.
 
 Checks:
 All six .m files ran to completion in GNU Octave 6.4 with figure creation. Saved array shapes, finite values and equation-of-motion residuals for Q2 were checked. Free-vibration arrays agree with the stated initial-condition formula. The PDFs' figures are drawn from those actual saved results. MATLAB itself was not available for an additional run.
