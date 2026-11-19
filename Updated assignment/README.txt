@@ -1,3 +1,5 @@
+Download the ZIP in this folder and extract it first. Its internal filenames are preserved. Open MATLAB in the extracted folder, with all six main .m files beside Elcentro.mat. The Q3 alternative is separate and optional, as explained below.
+
 # Dynamics code review
 
 Run the .m files from the same folder as Elcentro.mat. Keep the capital E in the filename.
